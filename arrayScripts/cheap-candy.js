@@ -12,14 +12,15 @@ let products = [
 ];
     // // Which candies costs less than $4.00?
 function getCheapCandy(products,price) {
-	    for (let index = 0; index < products.length; index++) {
-	        const candy = products[index];
+	    for (let i = 0; i < products.length; i++) {
+	        const candy = products[i];
 	        if (candy.price < price) {
 	            console.log(candy.product);
 	        }
 	    }
 	
 }
+// getCheapCandy(products,4);
     // // Which candies has "M&M" its name?
 function searchCandy(products,name) {
 	    for (let index = 0; index < products.length; index++) {

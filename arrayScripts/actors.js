@@ -28,18 +28,18 @@ function idSearch(members,id) {
     for (let index = 0; index < members.length; index++) {
         const member = members[index];
         if (member.memID == id) {
-            console.log(member.name);
+            console.log(member);
         }
     }
 }
-// idSearch(academyMembers,187);
+idSearch(academyMembers,187);
 // Who has have been in at least 3 films?
 
 function participationCount(members,numberofmovies) {
     for (let index = 0; index < members.length; index++) {
         const member = members[index];
         if (member.films.length >= numberofmovies) {
-            console.log(member.name);
+            console.log(member);
         }
     }
 }
@@ -49,7 +49,7 @@ function nameSearch(members,name) {
     for (let index = 0; index < members.length; index++) {
         const member = members[index];
         if (member.name.indexOf(name) != -1) {
-            console.log(member.name);
+            console.log(member);
         }
     }
 }
@@ -66,4 +66,4 @@ function filmSearch(members,filmName) {
         }
     }
 }
-filmSearch(academyMembers,"A");
+// filmSearch(academyMembers,"A");

@@ -45,4 +45,7 @@ let courses = [
             return 1;
         }
     });
-    console.log(courses);
+     for (let index = 0; index < courses.length; index++) {
+        const course = courses[index];
+        console.log(`${course.Title}`);
+     }

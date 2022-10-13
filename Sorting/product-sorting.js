@@ -21,11 +21,17 @@ products.sort (function (a,b) {
     }
 });
 
-console.log(products);
+for (let index = 0; index < products.length; index++) {
+    const product = products[index];
+    console.log(`${product.product}`);
+}
 
 console.log(`-------------------------------------------`);
 
 products.sort (function (a,b) {
     return b.price - a.price;
 })
-console.log(products);
+for (let index = 0; index < products.length; index++) {
+    const product = products[index];
+    console.log(`${product.product}: ${product.price}`);
+}

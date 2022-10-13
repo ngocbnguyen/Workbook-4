@@ -58,10 +58,10 @@ function nameSearch(members,name) {
 function filmSearch(members,filmName) {
     for (let index = 0; index < members.length; index++) {
         const member = members[index];
-        for (let i = 0; i < member.length; i++) {
+        for (let i = 0; i < member.films.length; i++) {
             const film = member.films[i];
             if (film.startsWith(filmName) != -1) {
-                console.log(member.name);
+                console.log(film[i]);
             }
         }
     }

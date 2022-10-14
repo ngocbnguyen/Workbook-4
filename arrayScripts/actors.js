@@ -32,7 +32,7 @@ function idSearch(members,id) {
         }
     }
 }
-idSearch(academyMembers,187);
+// idSearch(academyMembers,187);
 // Who has have been in at least 3 films?
 
 function participationCount(members,numberofmovies) {
@@ -60,10 +60,10 @@ function filmSearch(members,filmName) {
         const member = members[index];
         for (let i = 0; i < member.films.length; i++) {
             const film = member.films[i];
-            if (film.startsWith(filmName) != -1) {
-                console.log(film[i]);
+            if (film.startsWith(filmName)) {
+                console.log(member.name);
             }
         }
     }
 }
-// filmSearch(academyMembers,"A");
+filmSearch(academyMembers,"A");
